@@ -7,6 +7,7 @@ app.use(morgan('common'));
 
 const playstore = require('./playstore.js');
 
+//(req, res) written as an anonymous function
 app.get('/apps', (req, res) => {
     const { genres = "", sort } = req.query;
 
